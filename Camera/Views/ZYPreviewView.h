@@ -1,5 +1,5 @@
 //
-//  SceneDelegate.h
+//  ZYPreviewView.h
 //  Camera
 //
 //  Created by wzp on 2019/11/18.
@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SceneDelegate : UIResponder <UIWindowSceneDelegate>
+NS_ASSUME_NONNULL_BEGIN
 
-@property (strong, nonatomic) UIWindow * window;
+@interface ZYPreviewView : UIView
 
 @end
 
+NS_ASSUME_NONNULL_END
