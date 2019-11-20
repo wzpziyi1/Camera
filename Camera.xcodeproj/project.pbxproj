@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		09E09E1723827D9D008DFABC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E09E1623827D9D008DFABC /* AppDelegate.m */; };
-		09E09E1A23827D9D008DFABC /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E09E1923827D9D008DFABC /* SceneDelegate.m */; };
 		09E09E1D23827D9D008DFABC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E09E1C23827D9D008DFABC /* ViewController.m */; };
 		09E09E2023827D9D008DFABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09E09E1E23827D9D008DFABC /* Main.storyboard */; };
 		09E09E2223827DA0008DFABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09E09E2123827DA0008DFABC /* Assets.xcassets */; };
@@ -16,6 +15,7 @@
 		09E09E2823827DA0008DFABC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E09E2723827DA0008DFABC /* main.m */; };
 		09E09E3223827DA1008DFABC /* CameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E09E3123827DA1008DFABC /* CameraTests.m */; };
 		09E09E3D23827DA1008DFABC /* CameraUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E09E3C23827DA1008DFABC /* CameraUITests.m */; };
+		09E09E4D23827FBD008DFABC /* ZYPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E09E4C23827FBD008DFABC /* ZYPreviewView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,6 @@
 		09E09E1223827D9D008DFABC /* Camera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Camera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09E09E1523827D9D008DFABC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		09E09E1623827D9D008DFABC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		09E09E1823827D9D008DFABC /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		09E09E1923827D9D008DFABC /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		09E09E1B23827D9D008DFABC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		09E09E1C23827D9D008DFABC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		09E09E1F23827D9D008DFABC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +52,8 @@
 		09E09E3823827DA1008DFABC /* CameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09E09E3C23827DA1008DFABC /* CameraUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraUITests.m; sourceTree = "<group>"; };
 		09E09E3E23827DA1008DFABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09E09E4B23827FBD008DFABC /* ZYPreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYPreviewView.h; sourceTree = "<group>"; };
+		09E09E4C23827FBD008DFABC /* ZYPreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYPreviewView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +104,9 @@
 		09E09E1423827D9D008DFABC /* Camera */ = {
 			isa = PBXGroup;
 			children = (
+				09E09E4A23827F56008DFABC /* Views */,
 				09E09E1523827D9D008DFABC /* AppDelegate.h */,
 				09E09E1623827D9D008DFABC /* AppDelegate.m */,
-				09E09E1823827D9D008DFABC /* SceneDelegate.h */,
-				09E09E1923827D9D008DFABC /* SceneDelegate.m */,
 				09E09E1B23827D9D008DFABC /* ViewController.h */,
 				09E09E1C23827D9D008DFABC /* ViewController.m */,
 				09E09E1E23827D9D008DFABC /* Main.storyboard */,
@@ -135,6 +134,15 @@
 				09E09E3E23827DA1008DFABC /* Info.plist */,
 			);
 			path = CameraUITests;
+			sourceTree = "<group>";
+		};
+		09E09E4A23827F56008DFABC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				09E09E4B23827FBD008DFABC /* ZYPreviewView.h */,
+				09E09E4C23827FBD008DFABC /* ZYPreviewView.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +207,7 @@
 		09E09E0A23827D9D008DFABC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZY;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = wzp;
 				TargetAttributes = {
@@ -269,8 +278,8 @@
 			files = (
 				09E09E1D23827D9D008DFABC /* ViewController.m in Sources */,
 				09E09E1723827D9D008DFABC /* AppDelegate.m in Sources */,
+				09E09E4D23827FBD008DFABC /* ZYPreviewView.m in Sources */,
 				09E09E2823827DA0008DFABC /* main.m in Sources */,
-				09E09E1A23827D9D008DFABC /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

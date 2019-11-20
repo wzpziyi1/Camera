@@ -7,11 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
+@protocol ZYPreviewViewDelegate <NSObject>
 
-@interface ZYPreviewView : UIView
+- (void)focusAtPoint:(CGPoint)point;
+- (void)exposureAtPoint:(CGPoint)point;
 
 @end
 
-NS_ASSUME_NONNULL_END
+@interface ZYPreviewView : UIView
+//session关联AVCaptureVideoPreviewLayer、 激活AVCaptureSession
+@property (nonatomic, strong) AVCaptureSession *session;
+@property (nonatomic, weak) id<ZYPreviewViewDelegate>delegate;
+
+@property (nonatomic, assign) BOOL focusEnable;
+@property (nonatomic, assign) BOOL exposureEnable;
+
+
+@end
