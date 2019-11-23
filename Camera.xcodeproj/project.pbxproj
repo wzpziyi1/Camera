@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		097756E0238929F400EB34DB /* ZYCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 097756DF238929F400EB34DB /* ZYCameraController.m */; };
 		09E09E1723827D9D008DFABC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E09E1623827D9D008DFABC /* AppDelegate.m */; };
 		09E09E1D23827D9D008DFABC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E09E1C23827D9D008DFABC /* ViewController.m */; };
 		09E09E2023827D9D008DFABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09E09E1E23827D9D008DFABC /* Main.storyboard */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		097756DE238929F400EB34DB /* ZYCameraController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYCameraController.h; sourceTree = "<group>"; };
+		097756DF238929F400EB34DB /* ZYCameraController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYCameraController.m; sourceTree = "<group>"; };
 		09E09E1223827D9D008DFABC /* Camera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Camera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09E09E1523827D9D008DFABC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		09E09E1623827D9D008DFABC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -81,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		097756DA238927B300EB34DB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				097756DE238929F400EB34DB /* ZYCameraController.h */,
+				097756DF238929F400EB34DB /* ZYCameraController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		09E09E0923827D9D008DFABC = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +116,7 @@
 		09E09E1423827D9D008DFABC /* Camera */ = {
 			isa = PBXGroup;
 			children = (
+				097756DA238927B300EB34DB /* Controller */,
 				09E09E4A23827F56008DFABC /* Views */,
 				09E09E1523827D9D008DFABC /* AppDelegate.h */,
 				09E09E1623827D9D008DFABC /* AppDelegate.m */,
@@ -279,6 +292,7 @@
 				09E09E1D23827D9D008DFABC /* ViewController.m in Sources */,
 				09E09E1723827D9D008DFABC /* AppDelegate.m in Sources */,
 				09E09E4D23827FBD008DFABC /* ZYPreviewView.m in Sources */,
+				097756E0238929F400EB34DB /* ZYCameraController.m in Sources */,
 				09E09E2823827DA0008DFABC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,7 +398,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -436,7 +450,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
